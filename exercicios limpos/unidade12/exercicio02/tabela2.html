@@ -41,6 +41,12 @@
 		th {
 			text-align:left;
 		}
+		tbody tr:nth-child(odd) {
+			background-color: beige;
+		}
+		tbody tr:nth-child(even) {
+			background-color:thistle;
+		}
 		
 		thead th {
 			text-align:center;
@@ -62,9 +68,60 @@
     <body>
 		
         <table>
-        
+			<caption>Olimpiadas do Rio de janeiro</caption>
+			<thead>
+				<tr>
+					<td></td>
+					<td>Ouro</td>
+					<td>Prata</td>
+					<td>Bronze</td>
+					<td>Total</td>
+				</tr>
+			</thead>
 
-        
+			<tfoot>
+				<tr>
+					<td></td>
+					<td>Ouro</td>
+					<td>Prata</td>
+					<td>Bronze</td>
+					<td>Total</td>
+				</tr>
+			</tfoot>
+
+			<tbody>
+				<tr>
+					<td>Brasil</td>
+					<td>100</td>
+					<td>130</td>
+					<td>200</td>
+					<td>430</td>
+				</tr>
+				
+				<tr>
+					<td>USA</td>
+					<td>90</td>
+					<td>110</td>
+					<td>210</td>
+					<td>420</td>
+				</tr>
+				
+				
+				<tr>
+					<td>China</td>
+					<td>89</td>
+					<td>100</td>
+					<td>100</td>
+					<td>289</td>
+				</tr>
+				<tr>
+					<td>mexico</td>
+					<td>25</td>
+					<td>1000</td>
+					<td>39</td>
+					<td>89</td>
+				</tr>
+			</tbody>
         </table>
 
     </body>
