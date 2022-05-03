@@ -1,4 +1,3 @@
-@charset "ISO-8859-2";
 /* CSS Document */
 
 html {
@@ -31,7 +30,7 @@ input {
 	margin-bottom:20px;
 	border:1px solid #999;
 	padding:8px;
-	border-radius:3px;
+    border-radius:3px;
 }
 
 input:focus {
@@ -43,6 +42,17 @@ input[type=submit] {
 	width:100px;
 	color:#FFF;
 	background:linear-gradient(top, #F33, #933 );
+	background:-webkit-linear-gradient(top, #F33, #933 );
+	background:-moz-linear-gradient(top, #F33, #933 );
+	border:1px solid #333;
+	cursor:pointer;
+}
+a{
+	width:100px;
+	color:#FFF;
+	background:linear-gradient(top, #F33, #933 );
+	background:-webkit-linear-gradient(top, #F33, #933 );
+	background:-moz-linear-gradient(top, #F33, #933 );
 	border:1px solid #333;
 	cursor:pointer;
 }
