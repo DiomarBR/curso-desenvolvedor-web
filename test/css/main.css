@@ -1,0 +1,13 @@
+body {
+  background-color: #00ecfd;
+  color: orange;
+}
+
+.container p {
+  color: blue;
+}
+
+h1:hover {
+  color: black;
+}
+/*# sourceMappingURL=main.css.map */

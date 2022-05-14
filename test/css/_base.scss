@@ -1,0 +1,18 @@
+$text-color: orange;
+$cor2: black;
+body{
+    background-color: #00ecfd;
+    color: $text-color;
+}
+.container {
+    $text-color2: blue;
+    p {
+        color: $text-color2;
+    }
+}
+h1{
+    
+}
+h1:hover{
+    color: $cor2;
+}
