@@ -2,7 +2,11 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-
+            var nome = "diomar gonçAlves"
+            var letar_minusculas = nome.toLowerCase();
+            var primeira = letar_minusculas.charAt(0).toUpperCase();
+            var primeiro_nome = primeira + letar_minusculas.substr(1,letar_minusculas.length);
+            alert(primeiro_nome.split(" ")[0]);
         </script>
     </head>
     <body>

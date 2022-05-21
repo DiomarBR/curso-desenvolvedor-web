@@ -2,8 +2,17 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-
+            var dias_da_semana = ["domingo","segunda","terça","quarta","quinta","sexta","sabado"]
+            var meses = ["Janeiro","Fevereiro","Março","Abril","Maio"]
+            var agora = new Date();
+            var ano = agora.getFullYear();
+            var mes = meses[agora.getMonth()];
+            var dia = agora.getDate();
+            var semana = dias_da_semana[agora.getDay()];
             
+            console.log(semana + " " + "Dia " + dia + "/" + mes + "/" + ano);
+            var aniversario = new Date(2005,04,12);
+            console.log("Você nasceu no dia: " + dias_da_semana[aniversario.getDay()]);
         </script>
     </head>
     <body>
