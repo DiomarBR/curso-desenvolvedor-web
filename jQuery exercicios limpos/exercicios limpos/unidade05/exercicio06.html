@@ -36,12 +36,12 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>		
 			$( function(e) { 	
-				var alturajanela = $(window).height();
-
-				$('#primeira').css('height',alturajanela);
-				$('#segunda').css('height',alturajanela);
-				$('#terceira').css('height',alturajanela);
-
+				function redimencionar(){
+					var alturajanela = $(window).height();
+					$('#primeira').css('height',alturajanela);
+					$('#segunda').css('height',alturajanela);
+					$('#terceira').css('height',alturajanela);
+				}
 				$('nav li:nth-child(1)').click(function(e) {
 					$('html, body').animate( { scrollTop:$('#primeira').offset().top} , 1000 );
                 });	
@@ -51,6 +51,11 @@
 				$('nav li:nth-child(3)').click(function(e) {
 					$('html, body').animate( { scrollTop:$('#terceira').offset().top} , 1000 );
                 });
+
+				$(window).resize(function (e) {
+					redimencionar
+				});
+				redimencionar()
 			});			
 		</script>   
     </head>
